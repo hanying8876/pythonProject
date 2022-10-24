@@ -14,6 +14,7 @@ print('average is', num / n)
 # dictionaries=字典，一一对应且无序
 
 # just execute this to write the file
+# 文件 需要打开文件然后进行读(r)或写(w)的操作 with open(文件名，‘w’或‘r’) as f:
 lines = ["apple 5\n", "kiwi 12\n", "cereals 2\n"]
 with open("my_grocery.txt", "w") as f:
     for line in lines:
@@ -28,4 +29,5 @@ with open("my_grocery.txt", "r") as f:
         my_grocery[item] = quantity
 
 print(my_grocery)
+
 
