@@ -15,11 +15,12 @@ print('average is', num / n)
 
 # just execute this to write the file
 # 文件 需要打开文件然后进行读(r)或写(w)的操作 with open(文件名，‘w’或‘r’) as f:
+# 如果不写'r'或'w'，就默认读
 lines = ["apple 5\n", "kiwi 12\n", "cereals 2\n"]
 with open("my_grocery.txt", "w") as f:
     for line in lines:
         f.write(line)
-# complete the code
+# 最好使用with！！要么文件还需要关闭，如果文件不关闭在写入环节会默认一直存在于缓冲区，这样会慢，关闭后进入磁盘清空缓冲区
 li='apple 5\n ,kiwi 12\n ,cereals 2\n '
 print(li.split(" "))
 
@@ -34,4 +35,39 @@ with open("my_grocery.txt", "r") as f:
 
 print(my_grocery)
 
+print('\nquiz')
+values = ('college', [5, 15, 30], (50, 150, 250))
+print(values[2])
+print(values[2][2]) # 取第二个集合中的第二个
 
+s_1 = {100, 200, 300, 400}
+s_2 = {500, 200, '100', 600}
+s_3 = s_1.union(s_2)
+print(s_3)
+
+test_dic = {1: 2, 3: 4, 5: 6}
+result = 1
+for i in test_dic.keys(): # 取key，而不是值
+    result *= i # 求阶乘
+print(result)
+
+# 有点东西
+orders = [{'a': 100, 'b': 150, 'y': 200}, {'x': 120, 'y': 220}, {'a': 300, 'x': 200}]
+
+total = {}
+
+# 这里的值是相加的
+for i in range(len(orders)):
+
+    for k in orders[i].keys():
+
+        if k not in total.keys():
+            total[k] = 0
+
+        total[k] += orders[i][k]
+
+print(total)
+
+a = {1:1, 2:4, 3:9, 4:16, 5:25}
+print(a.pop(4))
+print(a)

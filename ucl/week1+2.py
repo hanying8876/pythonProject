@@ -15,6 +15,7 @@ print('hello' in 'world')
 print('hello' not in 'world')
 print('he' in 'hello')
 print('hello' in 'he')
+
 # 解释下面为何>0和int相加可行
 print(True + 1, False)
 # 十进制直接输入，二进制要用0b开头，八进制要有0o开头，十六进制用0x
@@ -53,7 +54,7 @@ print(a, b, c)
 s = [1, 2, 3, 'a', 4, 5]
 s[4] = 1
 print(s)
-# 卧槽这是什么鬼东西？int还能TM加判断，什么狗！详细见上面print(true+1
+# 卧槽这是什么鬼东西？int还能TM加判断，什么狗！详细见上面print(true+1)
 number = 2.7
 r_number = int((3000 - (number * 1000)) / 200) + ((3000 - (number * 1000)) % 200 > 0)
 r = (3000 - (number * 1000)) % 200 > 0
@@ -79,7 +80,7 @@ for n in range(5):
 i = 1
 while i < 7:
     print(i)
-    i += 1  # i=i+1 终止循环，同时使得数值符合默认，计算机默认从0开始
+    i += 1  # i=i+1 继续循环，否则永远都是i=1
 # break语句
 i = 1
 while i < 7:
