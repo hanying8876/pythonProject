@@ -8,10 +8,10 @@ print('average is', num / n)
 # 限定个数，且可以终止
 
 # 中英文对应
-# list=列表，单个格子，并存在顺序不能重复
-# tuples=不能更改，元组，有序且可以重复
-# sets=集合，无序
-# dictionaries=字典，一一对应且无序
+# list=列表，单个格子，并存在顺序不能重复，用[]
+# tuples=不能更改，元组，有序且可以重复，用()
+# sets=集合，无序，用{}
+# dictionaries=字典，一一对应且无序用{}
 
 # just execute this to write the file
 # 文件 需要打开文件然后进行读(r)或写(w)的操作 with open(文件名，‘w’或‘r’) as f:
