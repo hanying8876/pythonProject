@@ -39,22 +39,7 @@ def max(vs):
 # class 老师的代码不保熟可还行！？？
 print('\nAnimal')
 
-class Animal(object):
-   def __init__(self, name, age):
-       self.name = name
-       self.age = age
 
-   def call(self):
-       print(self.name, '会叫')
-
-class Cat(Animal):
-   def __init__(self,name,age,sex):
-       super(Cat, self).__init__(name,age)  # 不要忘记从Animal类引入属性
-       self.sex=sex
-
-if __name__ == '__main__':  # 单模块被引用时下面代码不会受影响，用于调试
-   c = Cat('喵喵', 2, '男')  #  Cat继承了父类Animal的属性
-   c.call()
 
 
 # 红绿灯
